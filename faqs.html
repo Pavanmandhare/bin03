@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood In Need</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="faqs.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <script src="bloodinfo.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="nav-container">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="mobile-left">
+      <div class="logo1"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+    </div>
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+      aria-controls="navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+        <path
+          d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+      </svg>
+    </button>
+    <nav id="navbar">
+      <div class="nav-left">
+        <div class="logo"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+      </div>
+      <ul class="options">
+        <li>
+          <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+              <path
+                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="home-li"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="bloodinfo.html">Blood Info</a></li>
+        <li><a href="faqs.html" class="active-link" aria-current="page">FAQs</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+  </div>
+  <main>
+    <div class="topbg"></div>
+    <div class="faqs">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="divider"></div>
+        <div class="faq-item">
+          <div class="faq-question">Can I donate if I am less than 18 years of age?</div>
+          <div class="faq-answer">No . Ideal age to donate blood is 18 to 65 years.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Why should I donate Blood?</div>
+          <div class="faq-answer">It helps in generation of new blood cells which in turn refreshes the body.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is the normal safe interval between blood donations?</div>
+          <div class="faq-answer">Ideal interval between blood donations for a male is 3 months and female is 4 months.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What happens to recipients who receive incompatible blood?</div>
+          <div class="faq-answer">If a recipient receives incompatible blood it leads to clumping of blood cells and can
+            be potentially fatal.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Is there any upper age limit to blood donation?</div>
+          <div class="faq-answer">yes 65 years is the upper age limit for blood donation.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is cord blood donation?</div>
+          <div class="faq-answer">Cord blood donation is the process of processing and storing umbilical cord blood in a
+            bank . Cord blood is rich in stem cells and treat blood cancers and other diseases.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How much blood is removed during donation and how soon does it get replaced in the
+            body?</div>
+          <div class="faq-answer">450 ml if body weight is more than 60 kg and 350 ml if body weight is less than 60 kg.
+            . Body replaces this volume within 24 to 48 hrs and replenishes red blood cells in 10 to 12 weeks</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Will I become physically weak or get any infection after blood donation?</div>
+          <div class="faq-answer">Few people may feel fatigue , dizzy , light headed an after donating blood but this is
+            temporary and is overcome by drinking water and other liquids before and after donating blood.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I donate blood frequently?</div>
+          <div class="faq-answer">A healthy man can donate blood every 3 months and healthy female can donate blood
+            every 4 months.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Who should I contact if I wish to donate blood?</div>
+          <div class="faq-answer">Contact Blood in need help line 9619171004.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How is blood formed?</div>
+          <div class="faq-answer">Blood is formed from Haematopoietic stem cells in bone marrow and the process is
+            called haematopoiesis.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is the importance of knowing the blood groups?</div>
+          <div class="faq-answer">Knowing the blood group of a patient is vitally important. It makes sure that the
+            donor's blood is compatible with the patient's blood , It minimises reaction during a transfusion and avoids
+            any catastrophic consequences.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is haemoglobin?</div>
+          <div class="faq-answer">Haemoglobin is a protein containing iron that facilitates transport of oxygen in red
+            blood cells.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is a unit of blood?</div>
+          <div class="faq-answer">one unit of whole blood is approximately 450 ml.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What are blood groups?</div>
+          <div class="faq-answer">Blood is made up of red blood cells , white blood cells and platelets and contains
+            Antigens on the surface of red blood cells . These antigens are proteins or sugars . . Some of these
+            antigens define which blood group you belong to . There are four ABO blood groups . A,B ,AB and O.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What are the other causes of fatality during Allogeneic Blood Transfusions (ABT)
+            besides viral infections?</div>
+          <div class="faq-answer">Fatality during allogeneic blood transfusion reactions are transfusion related acute
+            lung injury , haemolytic transfusion reactions and transfusion related sepsis.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Why is A group not given B group blood?</div>
+          <div class="faq-answer">if someone with group A blood is given group B blood then their anti B antibodies will
+            attack the group B cells and leads to fatal transfusion reactions.</div>
+        </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerBottom">
+      <div class="managed"> <p>Managed by : Jagadguru Narendracharya Maharaj Sansthan </p></div>
+      <div class="designer"> <p>Copyright @ 2025 All Rights Reserved T&C | Privacy Policy</p></div>
+    </div>
+      <div class="socialicons">
+        <a href="https://www.facebook.com/bloodinneed.org" target="_blank" ><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/jnmsbloodinneed" target="_blank" ><i class="fab fa-instagram"></i></a>
+        <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://www.youtube.com/@BloodInNeed" target="_blank" ><i class="fab fa-youtube"></i></a>
+      </div>
+  </footer>
+
+
+
+</body>
+
+</html>

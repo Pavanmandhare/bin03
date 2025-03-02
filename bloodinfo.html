@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood In Need</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="bloodinfo.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <script src="bloodinfo.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="nav-container">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="mobile-left">
+      <div class="logo1"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+    </div>
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+      aria-controls="navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+        <path
+          d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+      </svg>
+    </button>
+    <nav id="navbar">
+      <div class="nav-left">
+        <div class="logo"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+      </div>
+      <ul class="options">
+        <li>
+          <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+              <path
+                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="home-li"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="bloodinfo.html"  class="active-link" aria-current="page" >Blood Info</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+  </div>
+  <main>
+    <sub-nav>
+      <div class="bloodinfo">
+        <ul>
+          <li><a href="#impofbd" class="blood-info" data-section="impofbd">Importance Of Blood Donation</a></li>
+          <li><a href="#whocandonate" class="blood-info" data-section="whocandonate">Who Can Donate</a></li>
+        </ul>
+      </div>
+    </sub-nav>
+    <!-- impofbd Section -->
+    <section id="impofbd" class="content-section active-section">
+      <div class="impofbd">
+        <div class="container">
+          <h1>Importance of Blood Donation</h1>
+          <div class="divider"></div>
+          <div class="content">
+            <img src="impofbd.jpg" alt="Blood donation" class="main-image">
+            <p>Our human body is a miracle of organization. No work of man can compare with it in accuracy of its
+              process and the simplicity of its law. This law is the law of the universe, the law of opposites or
+              opposition - and there needs to be opposition in all things that we might learn by our experience. So we
+              can understand cold by experiencing hot or health when we experience sickness or dis-ease. Voluntary blood
+              donation, traditionally considered a fulfilling task, seems to be losing its appeal. Statistics prepared
+              by the Association of Voluntary Blood Donors’ Forum (AVBDF) on the percentage of voluntary blood donation
+              to the total blood collection in individual states during the last one year, shows a rapid decline in the
+              number of donors throughout India. Only few states have achieved the record where the percentage of
+              voluntary blood donation to total collection stands above 80%.</p>
+          </div>
+          <blockquote>
+            <img src="quote-iobd.png" alt="quote-iobd">
+          </blockquote>
+          <div class="paragraph">
+            <p>"The main reason why people do not donate blood is because no one has asked them to do so. If you
+              motivate people, they will come forward. Don't hesitate. Tell them that through this noble act, they could
+              potentially save precious lives." Blood donation is The most valued service to mankind.</p>
+            <br>
+            <p>Nothing is comparable to the preciousness of human blood. In spite of the rapid and remarkable conquests
+              of medical science today, there is no laboratory that manufactures blood. It is only in human beings that
+              human blood is made and circulated. For those who require blood for saving their lives, sharing from other
+              fellows is the only means. Hence, donation rather voluntary donation is the only way of accumulating blood
+              at safe storage to meet emergency requirements for saving lives.</p>
+            <br>
+            <p>Blood is required for treatment of accidental injuries, burns, diseases like Haemorrhagic, Anaemia,
+              Leukaemias, Thalassemias and Haemolytic ailments. In times of accidental injuries that shed huge amounts
+              of blood and also in various types of surgical operations for medical treatments, we require blood for
+              transfusion. Unavailability of blood may cost lives. Hence, importance of blood donation is tremendous.
+              This is the greatest gift one can give to the fellow humans. Voluntary blood donors are saviours of
+              mankind. If someone really loves oneself and other fellow beings, the only way to express it is to donate
+              blood voluntarily.</p>
+            <br>
+            <p>Safe blood transfusion comes under legal protection as it is life-saving and also fatal. Article 21 under
+              part III of Indian Constitution spells out that no person shall be deprived of his life. The Consumer
+              Protection Act of 1986 also covers blood as a commodity. Indian Panel Code chapter XIV, sections 269 and
+              270 also provide for protection against spread of infectious diseases due to negligent and malignant acts.
+              Drugs and Cosmetics Act of 1940 also establishes regulations for blood banking and transfusions.</p>
+          </div>
+          <div class="highlight-box">
+            <span>The role of blood in a living<br>creature is unique.</span>
+            <div class="dots"></div>
+          </div>
+          <div class="paragraph">
+            <p>Fear of needles, fear of pain, fear of sight of blood, fear of future weakness, fear of possible ill
+              effects, objection from elders, ignorance and illiteracy etc. are all reasons for many people who are
+              hesitant in donating blood. All these myths and misconceptions are to be removed in order that adequate
+              amount of blood is made available.</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- whocandonate Section -->
+    <section id="whocandonate" class="content-section">
+      <div class="wcd">
+        <div class="container">
+          <h1>Can I Donate?</h1>
+          <div class="divider"></div>
+          <h2 style="text-align:center;">Requisites for Blood Donation:</h2>
+          <div class="criteria-list">
+            <div class="criteria-item">
+              <div class="criteria-number">01</div>
+              <div class="criteria-details">
+                <h2>AGE</h2>
+                <p>Not less than 18 and not <br>more than 55 years</p>
+              </div>
+            </div>
+            <div class="criteria-item">
+              <div class="criteria-details">
+                <h2 style="text-align:right;">WEIGHT</h2>
+                <p>Not less than 45 kilograms</p>
+              </div>
+              <div class="criteria-number">02</div>
+            </div>
+
+            <div class="criteria-item">
+              <div class="criteria-number">03</div>
+              <div class="criteria-details">
+                <h2>Body Temperature</h2>
+                <p>Below 37.5 °C (99.6 ° F)</p>
+              </div>
+            </div>
+            <div class="criteria-item">
+              <div class="criteria-details">
+                <h2 style="text-align:right;">Pulse</h2>
+                <p>60 to 100 beats/minute</p>
+              </div>
+              <div class="criteria-number">04</div>
+            </div>
+
+            <div class="criteria-item">
+              <div class="criteria-number">05</div>
+              <div class="criteria-details">
+                <h2>Blood Pressure</h2>
+                <p>Systlic: 110-140mm Hg</p>
+              </div>
+            </div>
+            <div class="criteria-item">
+              <div class="criteria-details">
+                <h2 style="text-align:right;">Diastolic</h2>
+                <p>670-90mm Hg</p>
+              </div>
+              <div class="criteria-number">06</div>
+            </div>
+
+            <div class="criteria-item">
+              <div class="criteria-number">07</div>
+              <div class="criteria-details">
+                <h2>Skin Lesions</h2>
+                <p>The skin at site of venepuncture<br>should not have skin lesions<br>(damaged tissue on the skin)
+                  and<br>needle pricks</p>
+              </div>
+            </div>
+            <div class="criteria-item">
+              <div class="criteria-details">
+                <h2 style="text-align:right;">Donation Frequency</h2>
+                <p>12 weeks for males and<br>16 weeks for females</p>
+              </div>
+              <div class="criteria-number">08</div>
+            </div>
+
+            <div class="criteria-item">
+              <div class="criteria-number">09</div>
+              <div class="criteria-details">
+                <h2>Hemoglobin level</h2>
+                <p>Not below 12.5 g/dl</p>
+              </div>
+            </div>
+            <div class="criteria-item">
+              <div class="criteria-details">
+                <h2 style="text-align:right;">No acute<br>respiratory<br>illness</h2>
+              </div>
+              <div class="criteria-number">10</div>
+            </div>
+          </div>
+          <div class="additional">
+            <div><img src="impofbd.jpg" alt="Blood donation" class="main-image2"></div>
+            <div class="additional-info">
+              <h2 style="text-align:left;">Additional donor requisites for<br>Plateletpheresis:</h2>
+              <ul>
+                <li>Platelet Count: Less than 150 x 10(to the power of 9)/l.</li>
+                <li>The donor should have had aphaeresis procedures in the past with a frequency of not more than twice
+                  a week and 24 times a year.</li>
+                <li>Plasma proteins estimation: 6g/dl.</li>
+                <li>No aspirin or any aspirin related drugs to be taken three days before the apherisi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main>
+</body>
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer>
+    <div class="footerBottom">
+      <div class="managed"> <p>Managed by : Jagadguru Narendracharya Maharaj Sansthan </p></div>
+      <div class="designer"> <p>Copyright @ 2025 All Rights Reserved T&C | Privacy Policy</p></div>
+    </div>
+      <div class="socialicons">
+        <a href="https://www.facebook.com/bloodinneed.org" target="_blank" ><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/jnmsbloodinneed" target="_blank" ><i class="fab fa-instagram"></i></a>
+        <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://www.youtube.com/@BloodInNeed" target="_blank" ><i class="fab fa-youtube"></i></a>
+      </div>
+  </footer>
+
+
+
+</body>
+</html>

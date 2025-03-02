@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood In Need</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="about.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <script src="bloodinfo.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <div class="nav-container">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="mobile-left">
+      <div class="logo1"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+    </div>
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+      aria-controls="navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+        <path
+          d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+      </svg>
+    </button>
+    <nav id="navbar">
+      <div class="nav-left">
+        <div class="logo"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+      </div>
+      <ul class="options">
+        <li>
+          <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+              <path
+                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="home-li"><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active-link" aria-current="page">About Us</a></li>
+        <li><a href="bloodinfo.html">Blood Info</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+  </div>
+  <main>
+    <div class="topbg"></div>
+    <div class="aboutus">
+      <div class="container">
+        <h1>About Us</h1>
+        <div class="divider"></div>
+          <div class="about-paragraph">
+            <p>Blood components have a very short shelf life, therefore, acquiring a steady supply or stock piling blood or any of its components is a perennial problem. Scientist tried their hand at transfusing blood from other animals to humans but in vain. It appears that "only the blood of one human suits another". As per Jagadguru Narendracharyaji Maharaj's noble Teaching --</p>
+            <br>
+            <div class="about-txt"> <img src="about-txt.png" alt="about-txt"></div></div>
+            <br>
+            <p>Donating blood is definitely gives donor inner satisfaction and is indeed a lifesaving noble cause. This service is inspired by this noble thought. It is an intensely humanitarian act which tides over man made barriers and one of the best ways to express our love and care for our fellow beings.</p>
+            <div class="aboutus-content">
+              <img src="aboutus-main.jpg" alt="Blood donation" class="about-image">
+            </div>
+            <p>The aim of our service is to give the safest blood any time and in right quantity to the needy patients. To achieve this goal we are pleased to start this service online. Tt is our aim to achieve 100% voluntary blood donation i.e. all the blood is from a voluntary authenticated individual anytime its needed to save life. Apart from this it will also help to create global awareness of the need for safe blood & its  component.</p>
+            <div class="about-highlight"><p>For Donor it is a great feeling when he or she is working for such great cause but when such efforts are appreciated and blessed by Jagadguru Narendracharyaji Maharaj which gives a feeling of pride and honour.</p></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-container">
+      <div class="gallery">
+          <img src="01.jpg" alt="Image 1">
+          <img src="02.jpg" alt="Image 2">
+          <img src="03.jpg" alt="Image 3">
+          <img src="04.jpg" alt="Image 4">
+          <img src="05.jpg" alt="Image 5">
+          <img src="06.jpg" alt="Image 6">
+          <img src="07.jpg" alt="Image 7">
+          <img src="08.jpg" alt="Image 8">
+          <img src="09.jpg" alt="Image 9">
+          <img src="10.jpg" alt="Image 10">
+          <img src="11.jpg" alt="Image 11">
+          <img src="12.jpg" alt="Image 12">
+          <img src="13.jpg" alt="Image 13">
+          <img src="14.jpg" alt="Image 14">
+      </div>
+  </div>
+  </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerBottom">
+        <div class="managed"> <p>Managed by : Jagadguru Narendracharya Maharaj Sansthan </p></div>
+        <div class="designer"> <p>Copyright @ 2025 All Rights Reserved T&C | Privacy Policy</p></div>
+      </div>
+        <div class="socialicons">
+          <a href="https://www.facebook.com/bloodinneed.org" target="_blank" ><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/jnmsbloodinneed" target="_blank" ><i class="fab fa-instagram"></i></a>
+          <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
+          <a href="https://www.youtube.com/@BloodInNeed" target="_blank" ><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood In Need</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+<div class="nav-container">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="mobile-left"> <div class="logo1"> <img src="bin-swami1.png" alt="Left Logo"> </div> </div>
+  <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+  </button>
+  <nav id="navbar">
+    <div class="nav-left"> <div class="logo"> <img src="bin-swami1.png" alt="Left Logo"> </div></div>
+    <ul class="options">
+      <li>
+        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+        </button>
+      </li>
+      <li class="home-li"><a class="active-link" aria-current="page" href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="bloodinfo.html">Blood Info</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <!--<li><a class="accent-link" href="login.html">Login</a></li>-->
+    </ul>
+  </nav>
+  
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+</div>
+  <main>
+    
+
+    <!-- Row Widget - Hero -->
+    <div class="bg-container">
+      <div class="heroimg">
+          <div class="herologo"> <img src="Hero.png"> </div>
+      </div>
+      <div class="text-container">
+          <div class="textlogo"> <img src="text.png"> </div>
+        <div class="herobtn">
+              <button class="btn btn-primary" data-lang="requestButton"><a href="requestform.html">Raise Blood Request  →</a></button>
+              <button class="btn btn-secondary" data-lang="registerButton"><a href="donorform.html">Register As Donor  →</a></button>
+              </div>
+      </div>
+    </div>
+    <!-- Row Widget - Welcome -->
+    <div class="bg-container1">
+      <div class="bloodimg">
+          <div class="bloodlogo"> <img src="blooddrops.png"> </div>
+      </div>
+      <div class="card_body">
+              <h2 class="card_heading">Welcome...</h2>
+              <p class="card_description">Blood components have a very short shelf life, therefore, acquiring a steady supply or stock piling blood or any of its components is a perennial problem. Scientist tried their hand at transfusing blood from other animals to humans but in vain. It appears that "only the blood of one human suits another". As per Jagadguru Narendracharyaji Maharaj's noble Teaching -- <strong>"Live and Help others to Live" (तुम्ही जगा, दुसऱ्याला जगवा)...</strong> Donating blood is definitely gives donor inner satisfaction and is indeed a lifesaving noble cause. This service is inspired by this noble thought. It is an intensely humanitarian act which tides over man made barriers and one of the best ways to express our love and care for our fellow beings.</p>
+              <a href="about.html" > <button class="knowmore">Know More</button> </a>
+              </div>
+      </div>
+  </div>
+  <!-- Counts Widget - Stats -->
+  <div class="stats-container">
+    <div class="stat-box">
+        <img src="total_blooddonor.png" alt="Total Blood Donors">
+        <div class="stat-number" data-target="113000">00000</div>
+        <p>Total Blood Donors</p>
+    </div>
+    <!--
+    <div class="divider"></div>
+
+    <div class="stat-box">
+        <img src="//total_request.png" alt="Total Requests">
+        <div class="stat-number" data-target="3000">00000</div>
+        <p>Total Requests</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+        <img src="//request_fullfilled.png" alt="Requests Fulfilled">
+        <div class="stat-number" data-target="2500">00000</div>
+        <p>Requests Fulfilled</p>
+    </div>-->
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+        <img src="donated_blood.png" alt="Donors Who Donated">
+        <div class="stat-number" data-target="25500">00000</div>
+        <p>Number of Donors Donated Blood</p>
+    </div>
+</div>
+<!-- Slider Widget -->
+<section id="slider-container">
+  <div class="container">
+    <h3 class="section-subheading">Other Social Activities by</h3>
+    <h1 class="section-heading">Jagadguru Narendracharya Maharaj Sansthan</h1>
+  </div>
+  <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-1.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 1
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-2.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 2
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-3.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 3
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-4.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+<!--<h2 class="food-name">
+                Yojana Name 4
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-5.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+    <!--<h2 class="food-name">
+                Yojana Name 5
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-6.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 6
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-7.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 7
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-8.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 8
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-9.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 9
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-10.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 10
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-11.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 11
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-12.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 12
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-13.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 13
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-14.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 14
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+         <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="slider-15.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <div class="tranding-slide-content-bottom">
+              <!--<h2 class="food-name">
+                Yojana Name 15
+              </h2>-->
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+      </div>
+
+      <div class="tranding-slider-control">
+        <div class="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+        <div class="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerBottom">
+      <div class="managed"> <p>Managed by : Jagadguru Narendracharya Maharaj Sansthan </p></div>
+      <div class="designer"> <p>Copyright @ 2025 All Rights Reserved T&C | Privacy Policy</p></div>
+    </div>
+      <div class="socialicons">
+        <a href="https://www.facebook.com/bloodinneed.org" target="_blank" ><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/jnmsbloodinneed" target="_blank" ><i class="fab fa-instagram"></i></a>
+        <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://www.youtube.com/@BloodInNeed" target="_blank" ><i class="fab fa-youtube"></i></a>
+      </div>
+  </footer>
+
+  
+</body>
+</html>

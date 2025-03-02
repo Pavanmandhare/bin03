@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        form { max-width: 400px; margin: auto; text-align: left; }
+        input, button { width: 100%; padding: 10px; margin: 5px 0; }
+    </style>
+    <script>
+        function sendWhatsAppRequest() {
+            // Generate unique request ID
+            let requestId = "REQ" + Math.floor(100000 + Math.random() * 900000);
+
+            // Get form values
+            let patientName = document.getElementById("patientName").value;
+            let hospitalName = document.getElementById("hospitalName").value;
+            let hospitalLocation = document.getElementById("hospitalLocation").value;
+            let bloodGroup = document.getElementById("bloodGroup").value;
+            let attendantName = document.getElementById("attendantName").value;
+            let attendantNumber = document.getElementById("attendantNumber").value;
+
+            // Create WhatsApp message
+            let message = ` *Blood In Need Request* %0A
+            *Request ID:* ${requestId}%0A
+            *Patient Name:* ${patientName}%0A
+            *Hospital Name:* ${hospitalName}%0A
+            *Location:* ${hospitalLocation}%0A
+            *Blood Group:* ${bloodGroup}%0A
+            *Attendant Name:* ${attendantName}%0A
+            *Attendant Number:* ${attendantNumber}`;
+
+            // WhatsApp link
+            let whatsappUrl = `https://wa.me/+917506220028?text=${message}`;
+
+            // Open WhatsApp
+            window.open(whatsappUrl, "_blank");
+
+            // Show request ID
+            document.getElementById("requestId").innerHTML = `Your Request ID: <b>${requestId}</b>`;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Raise Blood Request</h2>
+
+    <form onsubmit="event.preventDefault(); sendWhatsAppRequest();">
+        <input type="text" id="patientName" placeholder="Patient Name" required>
+        <input type="text" id="hospitalName" placeholder="Hospital Name" required>
+        <input type="text" id="hospitalLocation" placeholder="Hospital Location" required>
+        <input type="text" id="bloodGroup" placeholder="Blood Group" required>
+        <input type="text" id="attendantName" placeholder="Attendant Name" required>
+        <input type="tel" id="attendantNumber" placeholder="Attendant Number" required>
+        <button type="submit">Send Request</button>
+    </form>
+
+    <p id="requestId" style="margin-top: 10px; font-weight: bold;"></p>
+
+</body>
+</html>

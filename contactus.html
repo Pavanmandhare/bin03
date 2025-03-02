@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood In Need</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="contactus.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <script src="bloodinfo.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav-container">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="mobile-left">
+      <div class="logo1"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+    </div>
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+      aria-controls="navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+        <path
+          d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+      </svg>
+    </button>
+    <nav id="navbar">
+      <div class="nav-left">
+        <div class="logo"> <img src="bin-swami1.png" alt="Left Logo"> </div>
+      </div>
+      <ul class="options">
+        <li>
+          <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+              <path
+                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="home-li"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="bloodinfo.html">Blood Info</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contactus.html" class="active-link" aria-current="page">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+  </div>
+  <main>
+    <div class="topbg"></div>
+    <div class="contactus">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <div class="divider"></div>
+        <div class="contact">
+          <div class="contact-details">
+            <div class="contact-call">You can call us on our<br>Help Line number: <i
+                class="fa-solid fa-phone-volume" style="color: #d32f2f;"></i>
+              <div class="contact-no"><a href="tel:+919619171004"> +91 9619171004 </a>
+              </div>
+            </div>
+
+            <!--<div class="c-details">
+            <div class="contact-question">For Donors</div>
+            <div class="contact-answer">donor@bloodinneed.org</div>
+            </div>
+            <div class="c-details">
+            <div class="contact-question">For Blood Requestors</div>
+            <div class="contact-answer">request@bloodinneed.org</div>
+            </div> -->
+            <div class="c-details">
+              <div class="contact-question"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Email id</div>
+              <div class="contact-answer"><a href="mailto:"> account@jnms.org </a>
+              </div>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/bloodinneed.org" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/jnmsbloodinneed" target="_blank"><i class="fab fa-instagram"></i></a>
+              <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
+              <a href="https://www.youtube.com/@BloodInNeed" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="contact-icon"><img src="contactus.png"></div>
+        </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerBottom">
+      <div class="managed">
+        <p>Managed by : Jagadguru Narendracharya Maharaj Sansthan </p>
+      </div>
+      <div class="designer">
+        <p>Copyright @ 2025 All Rights Reserved T&C | Privacy Policy</p>
+      </div>
+    </div>
+    <div class="socialicons">
+      <a href="https://www.facebook.com/bloodinneed.org" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jnmsbloodinneed" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
+      <a href="https://www.youtube.com/@BloodInNeed" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>
